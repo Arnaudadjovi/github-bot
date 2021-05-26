@@ -2,7 +2,7 @@
     $output = '';
 
         for ($i=0; $i <10 ; $i++) { 
-            $day = rand(0, 200);
+            $day = rand(360, 500);
             $commit = 'git commit --date="' . $day . ' day ago" -m "test"';
     
             $output = shell_exec('echo test >> README.md');

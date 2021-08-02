@@ -2,7 +2,7 @@
     $output = '';
 
         for ($i=0; $i <1 ; $i++) { 
-            $day = 500;
+            $day = 400;
             $commit = 'git commit --date="' . $day . ' day ago" -m "test"';
     
             $output = shell_exec('echo test >> README.md');

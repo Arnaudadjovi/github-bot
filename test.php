@@ -1,8 +1,8 @@
 <?php
     $output = '';
 
-        for ($i=1; $i < 10; $i++) { 
-            $day = $i;
+        for ($i=1; $i < 500; $i++) { 
+            $day = 10 + $i;
             $commit = 'git commit --date="' . $day . ' day ago" -m "test"';
     
             $output = shell_exec('echo test >> README.md');
